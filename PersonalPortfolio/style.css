@@ -1,0 +1,132 @@
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    min-width: 264px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    margin-top: 0;
+    background-color: rgb(165, 66, 66);
+}
+#navbar ul {
+    float: right;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#navbar li {
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: 300;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    width: 90px;
+}
+#navbar li:hover {
+    background-color: gray;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.main {
+    margin-top: 50px;
+}
+#welcome-section {
+    height: 100vh;
+    background-color: rgba(20, 22, 22, 0.747);
+    display: flex;
+    flex-direction: column;
+}
+.welcome_text_block {
+    width: 100%;
+    margin: auto 0;
+
+}
+h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 4em;
+    color: white;
+}
+.welcome__text {
+    text-align: center;
+    margin: 10px auto 0 auto;
+    color: rgb(29, 206, 13);
+    font-style: italic;
+}
+.many_project_blocks {
+    display: flex;
+    width: 700px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.project_block {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.museum_image {
+    width: 100%;
+}
+.project_text_block {
+    background-color: gray;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.project-tile {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.hidden {
+    color:gray;
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+}
+.many_project_blocks a:hover .hidden{
+    color: rgb(165, 66, 66);
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+}
+
+footer {
+    text-align: center;
+}
+#profile-link:hover {
+    color: gold;
+}
+@media (max-width: 700px) {
+    .many_project_blocks {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid red;
+        justify-content: center;
+    }
+
+    .project_block {
+        margin-top: 20px;
+        border: 1px solid red;
+    }
+}

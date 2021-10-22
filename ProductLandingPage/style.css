@@ -1,0 +1,180 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sevillana', cursive;
+    font-size: 22px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -110px;
+    background-color: rgba(3, 7, 44, 1);
+    color: white;
+}
+
+main {
+    margin-top: 110px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.companyNameHeader {
+    width: 300px;
+}
+
+.companyNameHeader p {
+    padding-left: 20px;
+}
+
+.logo {
+    width: 300px;
+}
+
+.headerNav {
+    width: 300px;
+    height: 100%;
+}
+
+.headerUnsorted {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    list-style-type: none;
+}
+
+.headerUnsorted li {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#header-img {
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.description_section {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.videoBlock {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+#video {
+    padding: 0 auto;
+}
+
+.formBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.footerBlock {
+    margin: 10px auto;
+}
+footer a {
+    color: black;
+}
+.footerBlock a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+@media (max-width:500px) {
+
+    .headerNav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-link {
+        color: white;
+    }
+    .nav-link:hover{
+        color: gold;
+        text-decoration-color: gold;
+
+    }
+    p {
+        display: block;
+        width: 100%;
+        white-space: normal;
+    }
+    header {
+        display: block;
+        height: auto;
+        width: 100%;
+        background-color: rgba(3, 7, 44, 1);
+        color: white;
+        position: relative;
+        margin-top: 0;
+        border: 1px solid rgba(3, 7, 44, 1);
+    }
+    .description_section {
+        word-wrap: break-word;
+        width: 100%;
+    }
+
+    .companyNameHeader {
+        margin: 0 auto;
+        padding: 0;
+        height: auto;
+    }
+    .logo {
+        display: none;
+    }
+    .headerNav {
+        margin: 0 auto;
+    }
+    .companyNameHeader {
+        word-wrap: break-word;
+    }
+    main {
+        margin-top: 0;
+        display: block;
+    }
+    .formBlock {
+        display: block;
+        text-align: center;
+    }
+    .videoBlock {
+        display: flex;
+        width: 100%;
+        padding: 0 auto;
+    }
+    #video {
+        width: 80%;
+        display: block;
+    }
+    .footerBlock {
+        display: block;
+        text-align: center;
+    }   
+}

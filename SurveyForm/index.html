@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="mainBlock">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking the time to help me improve my skills</p>
+        </header>
+
+        <div class="surveyFormBlock">
+
+            <form id="survey-form">
+                <div class="block1 blocks">
+                    <label for="name" id="name-label">Please enter your name:</label><br>
+                    <input class="inputCenter" type="text" id="name" name="name" placeholder="Your name" required
+                        pattern="[a-zA-Z][a-zA-Z ]{2,}" maxlength="40">
+                </div>
+
+                <div class="block2 blocks">
+                    <label for="email" id="email-label">Please enter your email:</label> <br>
+                    <input class="inputCenter" type="email" id="email" name="email" required
+                        pattern="[/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/]" required
+                        minlength="6" maxlength="30" placeholder="Your email">
+                </div>
+
+                <div class="block3 blocks">
+                    <label for="number" id="number-label">Please enter your age:</label><br>
+                    <input class="inputCenter" type="number" id="number" name="age" min='0' max="120"
+                        placeholder="Your Age">
+                </div>
+
+
+
+
+
+
+                <div class="block4 blocks">
+                    <p>What if your gender?</p>
+                    <div class="radioBlock">
+                        <div class="radio">
+                            <input type="radio" id="radioQ1" name="radioQuestion" value="Male" checked>
+                            <label for="radioQ1">Male</label>
+
+                        </div>
+
+                        <div class="radio">
+                            <input type="radio" id="radioQ2" name="radioQuestion" value="Female">
+                            <label for="radioQ2">Female</label>
+
+                        </div>
+
+                        <div class="radio">
+                            <input type="radio" id="radioQ3" name="radioQuestion" value="Alien">
+                            <label for="radioQ3">Alien</label>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="block5 blocks">
+                    <label class="select_block" for="selectQ1">What is your age:</label><br>
+                    <select name="selectQ1" id="dropdown" form="survey-form">
+                        <option value="1">18-25</option>
+                        <option value="2">26-30</option>
+                        <option value="3">31-36</option>
+                        <option value="4">37-45</option>
+                        <option value="4">46+</option>
+                    </select>
+                </div>
+
+                <div class="block6 blocks">
+                    <p>What media do you prefer?</p>
+                    <input class="checkbox" type="checkbox" id="An1" name="An1" value="Newspaper">
+                    <label for="An1">Newspaper</label><br>
+                    <input class="checkbox" type="checkbox" id="An2" name="An2" value="TV">
+                    <label for="An2">TV</label><br>
+                    <input class="checkbox" type="checkbox" id="An3" name="An3" value="Internet">
+                    <label for="An3">Internet</label>
+                </div>
+
+                <div class="block7 blocks">
+                    <p>Please submit your feedback</p>
+                    <textarea rows="5" name="comments" placeholder="Enter your feedback here"></textarea></p>
+                </div>
+
+                <button id="submit" type="submit">Submit</button>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+    <div class="mainBlock">
+
+        <header id="header">
+                <div class="companyNameHeader">
+                    <p>Racoon City Police Department</p>
+                </div>
+                <div class="logo">
+                    <img id="header-img" src="http://clip2net.com/clip/m131374/1634267874-58046-137kb.png">
+                </div>
+                <nav class="headerNav" id="nav-bar">
+                    <ul class="headerUnsorted">
+                        <li><a href="#description" class="nav-link">Top</a></li>
+                        <li><a href="#video" class="nav-link">Video</a></li>
+                        <li><a href="#form" class="nav-link">Email</a></li>
+                        <li><a href="#footerBlock" class="nav-link">Footer</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <main>
+            <section class="description_section" id="description">
+                <p>
+                    The Raccoon Police Department, commonly abbreviated as "RPD", is a municipal law enforcement
+                    agency which served Raccoon City in Arklay County, United States.
+                </p>
+
+                <p>
+                    The Raccoon Police Department was established in 1969, when the then-city's rapid expansion
+                    necessitated a dedicated police force beyond the Arklay County Sheriff's Department (ASD). Raccoon's
+                    art museum, which had closed down, was purchased by the RPD the same year to be used as their base
+                    of operations, the Raccoon Police Station.
+                </p>
+
+                <p>
+                    When Mayor Michael Warren began preparation for the "Bright Raccoon 21" project in the early 1990s,
+                    the force received extra funding from various local companies, including Umbrella USA, who wanted
+                    assurances the RPD could deal with the increasing crime rate and the threat of domestic terrorism.
+                    From this funding, the Special Tactics and Rescue Service was established.
+                </p>
+
+                <p>
+                    During the 1990s, the RPD was under the control of Chief Brian Irons, who received monthly bribes
+                    from Umbrella USA to keep the company's illegal activities from being investigated. Following the
+                    events of the Mansion Incident, Irons barred investigation into Umbrella at the direct request of
+                    Dr. Birkin, causing the surviving members of S.T.A.R.S. to organize their own private investigation
+                    of the company and the Chief.
+                </p>
+
+            </section>
+
+            <section class="videoBlock">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/MklpTfSQmkQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </section>
+
+            <div class="formBlock">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" name="email" type="email" placeholder="Email"
+                        pattern="[/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/]">
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="footerBlock formBlock" id="footerBlock">
+                HunterTigerX for&nbsp<a href="https://www.freecodecamp.org"
+                    target="_blank">FreeCodeCamp.org</a>&nbsp2021
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
