@@ -369,6 +369,9 @@ button {
   .implementBlockButtonLearnMore:hover {
     background: #0066db;
   }
+  .secondBlockButton:hover {
+    background: #0066db;
+  }
   .subscribeBlock {
     position: relative;
     width: 100%;
